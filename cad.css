@@ -1,0 +1,35 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(imagens/cad.png);
+}
+
+.btt {
+    position: relative;
+    text-align: center;
+    top: 80px;
+    left: 550px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(51, 154, 223);
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+a:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra mais intensa ao clicar */
+    transform: translateY(2px);
+}
+
+a:hover {
+    background-color: rgb(41, 134, 203);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais intensa ao passar o mouse */
+}

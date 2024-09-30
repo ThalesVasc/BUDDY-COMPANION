@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Ampulheta</title>
+    <style>
+        body {
+            background-color: #e2e2e8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 700px;
+            background-color: #e2e2e8;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .back-button {
+            position: absolute;
+            top: -40px;
+            left: -600px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timer-item {
+            background-color: #d3d3d3;
+            border-radius: 10px;
+            padding: 100px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            width: 100%;
+        }
+
+        .timer-options {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            right: 10px;
+        }
+
+        .icon-separator {
+            width: 60px;  
+            height: 60px; 
+            font-size: 48px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px; 
+            background-color: transparent; 
+            cursor: pointer; 
+            right: 1810px;
+        }
+
+        .plus-circle {
+            width: 100px;  
+            height: 100px; 
+            font-size: 48px; 
+            background-color: #fff; 
+            border: 2px solid #757575; 
+            border-radius: 50%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; 
+            position: absolute; 
+            right: 510px; 
+        }
+
+        .check, .times {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #757575;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .check {
+            color: black;
+            z-index: 1;
+        }
+
+        .times {
+            color: black;
+            z-index: 1;
+        }
+
+        .purple-strip-left {
+            position: absolute;
+            left: 190px;
+            top: 0;
+            bottom: 0;
+            width: 10px;
+            background-color: #7d5ba6;
+        }
+
+        .purple-strip-right {
+            position: absolute;
+            right: 150px;
+            top: 0;
+            bottom: 0;
+            width: 50px; 
+            background-color: #7d5ba6;
+            z-index: 0; 
+        }
+
+        .icon-timer {
+            position: absolute;
+            bottom: -40px;
+            left: -600px;
+            font-size: 300px;
+        }
+
+        .icon-hourglass {
+            position: absolute;
+            bottom: -40px;
+            right: -600px;
+            font-size: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button">&larr;</button>
+        <div class="timer-item">
+            <div class="purple-strip-left"></div>
+            <div class="timer-options">
+                <div class="icon-separator">:</div>
+                <div class="check">✔</div>
+                <div class="times">✖</div>
+            </div>
+            <div class="plus-circle">+</div> 
+            <div class="purple-strip-right"></div>
+        </div>
+        <div class="timer-item">
+            <div class="purple-strip-left"></div>
+            <div class="timer-options">
+                <div class="icon-separator">:</div>
+                <div class="check">✔</div>
+                <div class="times">✖</div>
+            </div>
+            <div class="plus-circle">+</div>
+            <div class="purple-strip-right"></div>
+        </div>
+        <div class="timer-item">
+            <div class="purple-strip-left"></div>
+            <div class="timer-options">
+                <div class="icon-separator">:</div>
+                <div class="check">✔</div>
+                <div class="times">✖</div>
+            </div>
+            <div class="plus-circle">+</div>
+            <div class="purple-strip-right"></div>
+        </div>
+        <div class="icon-timer">⏱️</div>
+        <div class="icon-hourglass">⏳</div>
+    </div>
+</body>
+</html>

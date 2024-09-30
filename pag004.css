@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 80%; /* Ajuste o valor para controlar o tamanho da imagem */
+    background-image: url(imagens/bd4.png);
+    background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+}
+
+.config{
+    position: relative;
+    left: 1600px;
+    top: 120px;
+}
+
+.agenda{
+    position: relative;
+    top: 890px;
+    left: 200px;
+}
+
+.rel{
+    position: relative;
+    top: 870px;
+    left: 400px;
+}
+
+.ant{
+    position: relative;
+    top: 860px;
+    left: 1400px;
+}

@@ -1,0 +1,17 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(imagens/pag005.png);
+}
+
+a{
+    text-decoration: none;
+}
+
+.adc{
+    position: relative;
+    font-size: 12px;
+    top: 750px;
+    left: 300px;
+
+}

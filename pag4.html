@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faixas Verticais e Horizontais</title>
+    <style>
+        .arrow-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            z-index: 2; 
+        }
+
+        .circle-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent; 
+            border: none; 
+            width: 100px;
+            height: 100px; 
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            cursor: pointer;
+            z-index: 2; 
+        }
+
+        .circle-button img {
+            width: 50px;
+            height: 50px; 
+        }
+
+        .arrow-button:before {
+            content: "←"; 
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .circle-button img {
+            width: 200px; 
+            height: 200px; 
+            transform: translate(-10%, -10%);
+        }
+
+        .vertical {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px; 
+            background-color: #7f73f0;
+            z-index: 1; 
+        }
+
+        .vertical.left {
+            left: 200px; 
+        }
+
+        .vertical.right {
+            right: 200px; 
+        }
+
+        .horizontal {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 50px; 
+            background-color: #7f73f0;
+            z-index: 1; 
+        }
+
+        .horizontal.top {
+            top: 0;
+        }
+
+        .horizontal.middle {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .horizontal.bottom {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <button class="arrow-button"></button>
+    <div class="container">
+        <!-- Faixas verticais -->
+        <div class="vertical left"></div>
+        <div class="vertical right"></div>
+
+        <!-- Faixas horizontais -->
+        <div class="horizontal top"></div>
+        <div class="horizontal middle"></div>
+        <div class="horizontal bottom"></div>
+
+        <!-- Botão central com imagem -->
+        <button class="circle-button">
+            <img src="botão.png" alt="Plus Icon" width="1000" height="1500">
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d4d4d4; /* Cor de fundo clara */
+        }
+
+        .header {
+            background-color: #b8a4db; /* Cor roxa clara da parte superior */
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .header button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between; /* Empurra os itens para as extremidades */
+            padding: 20px;
+        }
+
+        .task-area {
+            display: flex;
+            gap: 20px; /* Espaçamento entre os quadros de tarefas */
+        }
+
+        .task-box {
+            background-color: #e1d5f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .task-box h3 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .task-box p {
+            font-size: 24px;
+            margin: 5px 0;
+        }
+
+        .icon-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon-area img {
+            margin-top: 20px;
+            width: 400px; /* Aumenta o tamanho da imagem do troféu */
+        }
+
+        .week-section {
+            background-color: #b8a4db;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            min-height: 500px; /* Altura mínima para aumentar o quadro */
+            margin-left: 40px; /* Separação do quadro de semana */
+        }
+
+        .week-section h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .checkbox-group label {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+
+        /* Tamanho das estrelas */
+        .task-box img {
+            width: 50px; /* Define o mesmo tamanho para ambas as estrelas */
+            height: 50px; /* Define o mesmo tamanho para ambas as estrelas */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com o botão de voltar -->
+    <div class="header">
+        <button>&larr;</button> <!-- Setinha para a esquerda como botão de voltar -->
+    </div>
+
+    <!-- Container com os quadros e os ícones -->
+    <div class="container">
+        <!-- Área dos quadros de tarefas e ícones -->
+        <div class="task-area">
+            <!-- Quadro de Tarefas Concluídas -->
+            <div class="task-box">
+                <h3>Tarefas Concluídas:</h3>
+                <p>0</p>
+                <img src="goldenstra.png" alt="Estrela Amarela"> <!-- Ícone de estrela -->
+            </div>
+
+            <!-- Quadro de Tarefas Incompletas -->
+            <div class="task-box">
+                <h3>Tarefas Incompletas:</h3>
+                <p>0</p>
+                <img src="graystar.png" alt="Estrela Cinza"> <!-- Ícone de estrela cinza -->
+            </div>
+
+            <!-- Ícone de troféu com estrelas -->
+            <div class="icon-area">
+                <img src="trofeu.png" alt="Troféu"> <!-- Ícone de troféu -->
+            </div>
+        </div>
+
+        <!-- Seção da semana com checkboxes -->
+        <div class="week-section">
+            <h3>Semana __ a __:</h3>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Hobbies</label>
+                <label><input type="checkbox"> Escola</label>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+

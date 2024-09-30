@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6e6f0; 
+        }
+        .header {
+            background-color: #b8a4db; 
+            height: 100px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .back-button {
+            background-color: #6a5bc0; 
+            border: none;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: black; 
+        }
+        .content {
+            padding: 40px;
+            background-color: #d4d4e6; 
+            height: calc(100vh - 100px); 
+        }
+        .label {
+            font-size: 18px;
+            color: black; 
+            margin-bottom: 20px;
+        }
+        .button-concluir {
+            background-color: #6a5bc0; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button class="back-button">
+            &#8592; 
+        </button>
+    </div>
+
+    <div class="content">
+        <p class="label">ESCREVA:</p>
+    </div>
+    <button class="button-concluir">CONCLUIR</button>
+</body>
+</html>
